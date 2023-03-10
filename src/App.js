@@ -21,7 +21,6 @@ const App = () => {
 
   const addMoveable = () => {
     // Create a new moveable component and add it to the array
-    const COLORS = ["red", "blue", "yellow", "green", "purple"];
 
     setMoveableComponents([
       ...moveableComponents,
@@ -31,7 +30,7 @@ const App = () => {
         left: 0,
         width: 100,
         height: 100,
-        color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        color: photos[Math.floor(Math.random() * photos.length)].thumbnailUrl,
         updateEnd: true
       },
     ]);

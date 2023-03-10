@@ -97,7 +97,7 @@ console.log("color", color);
           left: left,
           width: width,
           height: height,
-          background: color,
+          backgroundImage:`url(${color})` ,
         }}
         onClick={() => setSelected(id)}
       />
